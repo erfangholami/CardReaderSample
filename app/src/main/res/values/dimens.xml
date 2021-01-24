@@ -19,4 +19,11 @@
     <dimen name="main_page_card_input_default_side_padding">16dp</dimen>
     <dimen name="main_page_enter_card_description_text_size">32sp</dimen>
     <dimen name="main_page_card_saved_image_size">24dp</dimen>
+
+    <dimen name="main_page_expire_date_dialog_button_default_height">40dp</dimen>
+    <dimen name="main_page_expire_date_dialog_button_default_corner_radius">20dp</dimen>
+    <dimen name="main_page_expire_date_dialog_button_default_stroke">1dp</dimen>
+    <dimen name="main_page_expire_date_dialog_button_margin_side">8dp</dimen>
+    <dimen name="main_page_expire_date_dialog_padding">16dp</dimen>
+    <dimen name="main_page_expire_date_dialog_corner_radius">20dp</dimen>
 </resources>

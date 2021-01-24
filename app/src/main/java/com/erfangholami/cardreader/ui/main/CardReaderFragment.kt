@@ -5,11 +5,16 @@ import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import com.erfangholami.cardreader.R
 import com.erfangholami.cardreader.base.BaseFragment
+import com.erfangholami.cardreader.ui.view.expiredatepicker.ExpireDatePickerDialog
+import com.erfangholami.cardreader.ui.view.expiredatepicker.OnExpireDateChangeListener
+import com.erfangholami.cardreader.utils.Utils
 import com.getbouncer.cardscan.ui.CardScanActivity
 import kotlinx.android.synthetic.main.fragment_card_reader.*
+import kotlinx.android.synthetic.main.fragment_card_reader.view.*
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -105,6 +110,9 @@ class CardReaderFragment : BaseFragment()
         cardReaderViewModel.getCardExpireDateLive().observe(viewLifecycleOwner, {
             cardExpireInput.setText(it)
         })
+        cardReaderViewModel.getbankNameLive().observe(viewLifecycleOwner, {
+            cardNumberInput.setCompoundDrawablesWithIntrinsicBounds(null, null, Utils.getBankIcon(context, it), null)
+        })
 
 
         cardView.setOnClickListener {
@@ -117,7 +125,13 @@ class CardReaderFragment : BaseFragment()
         }
         cardExpireInput.setOnClickListener {
 
-            //todo: open the dialog
+            ExpireDatePickerDialog(requireActivity(), object : OnExpireDateChangeListener{
+                override fun OnExpireDateChanged(month: Int, year: Int)
+                {
+                    cardReaderViewModel.onCardExpireDateChanged("$month/$year")
+                }
+
+            }).show()
         }
     }
 

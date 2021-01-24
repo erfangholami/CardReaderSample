@@ -21,10 +21,10 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/cardView"
-        android:layout_width="192dp"
-        android:layout_height="96dp"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
         android:layout_marginTop="@dimen/main_page_card_view_margin_top"
-        android:background="@color/black"
+        app:srcCompat="@drawable/ic_camera"
 
         app:layout_constraintTop_toBottomOf="@+id/enterCardDetailDescription"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -69,6 +69,8 @@
         android:paddingLeft="@dimen/main_page_card_input_default_side_padding"
         android:hint="@string/main_page_card_expire_date_hint"
         android:editable="false"
+        android:drawableRight="@drawable/ic_drop_down"
+        android:drawableTint="@color/main_page_drop_down_tint_color"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/cardCVVInput"

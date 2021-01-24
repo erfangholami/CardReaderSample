@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_page_expire_date_dialog_background"
+    android:padding="@dimen/main_page_expire_date_dialog_padding">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_page_expire_date_dialog_title"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+    <NumberPicker
+        android:id="@+id/monthPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/headerText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/divider"
+        app:layout_constraintBottom_toTopOf="@+id/pickButton"/>
+
+    <NumberPicker
+        android:id="@+id/yearPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/headerText"
+        app:layout_constraintLeft_toRightOf="@+id/divider"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/pickButton"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_slash"
+
+        app:layout_constraintTop_toTopOf="@+id/monthPicker"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/monthPicker"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_page_expire_date_dialog_button_default_height"
+        android:layout_marginLeft="@dimen/main_page_expire_date_dialog_button_margin_side"
+
+        app:layout_constraintLeft_toRightOf="@+id/cancelButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_page_expire_date_dialog_button_default_height"
+        android:layout_marginRight="@dimen/main_page_expire_date_dialog_button_margin_side"
+
+        app:layout_constraintRight_toLeftOf="@+id/pickButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main_page_input_background_stroke_color">#808080</color>
     <color name="main_page_enter_card_description_text_color">#0000ff</color>
+    <color name="main_page_drop_down_tint_color">#FF5722</color>
+    <color name="main_page_expire_date_dialog_cancel_button_color">#F44336</color>
+    <color name="main_page_expire_date_dialog_ok_button_color">#4CAF50</color>
 </resources>

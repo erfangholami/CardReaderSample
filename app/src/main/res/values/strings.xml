@@ -7,4 +7,7 @@
     <string name="main_page_card_cvv_hint">CVV</string>
     <string name="main_page_card_number_hint">Card Number</string>
     <string name="main_page_get_card_number_failed_message">Failed to detect card number</string>
+    <string name="main_page_expire_date_dialog_title">Expiry Date</string>
+    <string name="main_page_expire_date_dialog_cancel_button_text">Cancel</string>
+    <string name="main_page_expire_date_dialog_ok_button_text">Pick</string>
 </resources>

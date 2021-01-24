@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() , CardScanActivityResultHandler
         cardReaderViewModel.onCardCVVChanged(scanResult.cvc)
         if(scanResult.expiryYear != null && scanResult.expiryMonth != null)
         {
-            cardReaderViewModel.onCardExpireDateChanged(scanResult.expiryYear + scanResult.expiryMonth)
+            cardReaderViewModel.onCardExpireDateChanged(scanResult.expiryMonth + "/" + scanResult.expiryYear!!.substring(2,4))
         }
         cardReaderViewModel.onBankNameChanged(scanResult.networkName)
     }

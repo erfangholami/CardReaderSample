@@ -3,6 +3,7 @@ package com.erfangholami.cardreader.ui.main
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.erfangholami.cardreader.di.ActivityScope
+import com.erfangholami.cardreader.utils.Utils
 import javax.inject.Inject
 
 /**
@@ -22,6 +23,7 @@ class CardReaderViewModel @Inject constructor(): ViewModel(), OnCardDataReceive
         if(!cardNumber.equals(cardNumberLive.value))
         {
             cardNumberLive.value = cardNumber
+            bankNameLive.value = cardNumber?.let { Utils.getBankName(it) }
         }
     }
 
