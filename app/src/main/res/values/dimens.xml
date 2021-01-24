@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_page_card_detail_description_margin_top">32dp</dimen>
+    <dimen name="main_page_card_view_margin_top">16dp</dimen>
+    <dimen name="main_page_card_view_text_margin_top">16dp</dimen>
+    <dimen name="main_page_card_number_input_margin_top">24dp</dimen>
+    <dimen name="main_page_card_number_input_margin_side">24dp</dimen>
+    <dimen name="main_page_card_cvv_input_margin_left">12dp</dimen>
+    <dimen name="main_page_card_cvv_input_margin_right">24dp</dimen>
+    <dimen name="main_page_card_cvv_input_margin_top">16dp</dimen>
+    <dimen name="main_page_card_expire_input_margin_top">@dimen/main_page_card_cvv_input_margin_top</dimen>
+    <dimen name="main_page_card_expire_input_margin_right">@dimen/main_page_card_cvv_input_margin_left</dimen>
+    <dimen name="main_page_card_expire_input_margin_left">24dp</dimen>
+    <dimen name="main_page_card_saved_text_margin_left">16dp</dimen>
+    <dimen name="main_page_card_saved_image_margin_top">16dp</dimen>
+    <dimen name="main_page_input_background_corner_radius">24dp</dimen>
+    <dimen name="main_page_input_background_stroke_width" >1dp</dimen>
+    <dimen name="main_page_card_input_default_height">48dp</dimen>
+    <dimen name="main_page_card_input_default_side_padding">16dp</dimen>
+    <dimen name="main_page_enter_card_description_text_size">32sp</dimen>
+    <dimen name="main_page_card_saved_image_size">24dp</dimen>
+</resources>

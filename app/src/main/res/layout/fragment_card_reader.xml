@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/enterCardDetailDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_page_card_detail_description_margin_top"
+        android:text="@string/main_page_card_detail_description_text"
+        android:gravity="center"
+        android:textSize="@dimen/main_page_enter_card_description_text_size"
+        android:textColor="@color/main_page_enter_card_description_text_color"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cardView"
+        android:layout_width="192dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="@dimen/main_page_card_view_margin_top"
+        android:background="@color/black"
+
+        app:layout_constraintTop_toBottomOf="@+id/enterCardDetailDescription"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cardViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_page_card_view_text_margin_top"
+        android:text="@string/main_page_card_view_text"
+
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/cardNumberInput"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/main_page_card_input_default_height"
+        android:layout_marginTop="@dimen/main_page_card_number_input_margin_top"
+        android:layout_marginRight="@dimen/main_page_card_number_input_margin_side"
+        android:layout_marginLeft="@dimen/main_page_card_number_input_margin_side"
+        android:paddingRight="@dimen/main_page_card_input_default_side_padding"
+        android:paddingLeft="@dimen/main_page_card_input_default_side_padding"
+        android:hint="@string/main_page_card_number_hint"
+
+        app:layout_constraintTop_toBottomOf="@+id/cardViewText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/cardExpireInput"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/main_page_card_input_default_height"
+        android:layout_marginLeft="@dimen/main_page_card_expire_input_margin_left"
+        android:layout_marginTop="@dimen/main_page_card_expire_input_margin_top"
+        android:layout_marginRight="@dimen/main_page_card_expire_input_margin_right"
+        android:paddingRight="@dimen/main_page_card_input_default_side_padding"
+        android:paddingLeft="@dimen/main_page_card_input_default_side_padding"
+        android:hint="@string/main_page_card_expire_date_hint"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/cardCVVInput"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumberInput" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/cardCVVInput"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/main_page_card_input_default_height"
+        android:layout_marginTop="@dimen/main_page_card_cvv_input_margin_top"
+        android:layout_marginRight="@dimen/main_page_card_cvv_input_margin_right"
+        android:paddingRight="@dimen/main_page_card_input_default_side_padding"
+        android:paddingLeft="@dimen/main_page_card_input_default_side_padding"
+        android:hint="@string/main_page_card_cvv_hint"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/cardExpireInput"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumberInput" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cardSavedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_page_card_saved_text"
+        android:layout_marginLeft="@dimen/main_page_card_saved_text_margin_left"
+
+        app:layout_constraintTop_toTopOf="@+id/cardSavedImage"
+        app:layout_constraintBottom_toBottomOf="@+id/cardSavedImage"
+        app:layout_constraintLeft_toRightOf="@+id/cardSavedImage"
+        app:layout_constraintRight_toRightOf="@+id/cardCVVInput"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cardSavedImage"
+        android:layout_width="@dimen/main_page_card_saved_image_size"
+        android:layout_height="@dimen/main_page_card_saved_image_size"
+        android:layout_marginTop="@dimen/main_page_card_saved_image_margin_top"
+
+        app:layout_constraintLeft_toLeftOf="@+id/cardExpireInput"
+        app:layout_constraintRight_toLeftOf="@+id/cardSavedText"
+        app:layout_constraintTop_toBottomOf="@+id/cardCVVInput"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:srcCompat="@drawable/ic_main_page_card_saved" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

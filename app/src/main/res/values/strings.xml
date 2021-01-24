@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Card Reader</string>
+    <string name="main_page_card_detail_description_text">"Enter Your Card\n Details"</string>
+    <string name="main_page_card_view_text">Card Capture</string>
+    <string name="main_page_card_saved_text">Card details are stored securely</string>
+    <string name="main_page_card_expire_date_hint">Expiry Date</string>
+    <string name="main_page_card_cvv_hint">CVV</string>
+    <string name="main_page_card_number_hint">Card Number</string>
 </resources>
