@@ -51,6 +51,8 @@
         android:paddingRight="@dimen/main_page_card_input_default_side_padding"
         android:paddingLeft="@dimen/main_page_card_input_default_side_padding"
         android:hint="@string/main_page_card_number_hint"
+        android:maxLength="16"
+        android:inputType="number"
 
         app:layout_constraintTop_toBottomOf="@+id/cardViewText"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -66,6 +68,7 @@
         android:paddingRight="@dimen/main_page_card_input_default_side_padding"
         android:paddingLeft="@dimen/main_page_card_input_default_side_padding"
         android:hint="@string/main_page_card_expire_date_hint"
+        android:editable="false"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/cardCVVInput"
@@ -80,6 +83,8 @@
         android:paddingRight="@dimen/main_page_card_input_default_side_padding"
         android:paddingLeft="@dimen/main_page_card_input_default_side_padding"
         android:hint="@string/main_page_card_cvv_hint"
+        android:maxLength="4"
+        android:inputType="number"
 
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/cardExpireInput"

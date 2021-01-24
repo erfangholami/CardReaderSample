@@ -10,7 +10,9 @@ import javax.inject.Singleton
  * Created by ErfanG on 1/24/2021.
  */
 @Singleton
-@Component(modules = [])
+@Component(modules = [
+    AppModule::class
+])
 interface AppComponent
 {
     @Component.Builder

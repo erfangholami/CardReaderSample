@@ -56,4 +56,7 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
     implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
 
+    //Card Reader Library
+    implementation 'com.getbouncer:cardscan-ui:2.0.0068'
+
 }

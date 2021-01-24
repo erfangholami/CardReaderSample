@@ -5,7 +5,8 @@ package com.erfangholami.cardreader.ui.main
  */
 interface OnCardDataReceive
 {
-    fun onCardNumberChanged(cardNumber : String)
-    fun onCardCVVChanged(cardCVV : String)
-    fun onCardExpireDateChanged(expireDate : String)
+    fun onCardNumberChanged(cardNumber : String?)
+    fun onCardCVVChanged(cardCVV : String?)
+    fun onCardExpireDateChanged(expireDate : String?)
+    fun onBankNameChanged(bankName : String?)
 }

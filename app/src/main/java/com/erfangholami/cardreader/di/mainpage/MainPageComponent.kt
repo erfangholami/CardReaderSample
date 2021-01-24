@@ -1,6 +1,7 @@
 package com.erfangholami.cardreader.di.mainpage
 
 import com.erfangholami.cardreader.di.ActivityScope
+import com.erfangholami.cardreader.ui.main.CardReaderFragment
 import com.erfangholami.cardreader.ui.main.MainActivity
 import dagger.Subcomponent
 
@@ -18,4 +19,5 @@ interface MainPageComponent
     }
 
     fun inject(activity : MainActivity)
+    fun inject(fragment : CardReaderFragment)
 }
